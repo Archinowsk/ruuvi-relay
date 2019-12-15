@@ -21,7 +21,7 @@
     "flow": "flow check",
     "prettier": "prettier --write ./**/*.{js,json,md}",
     "start-dev": "cross-env NODE_ENV=development nodemon --exec babel-node src/app.js",
-    "start": "npm run build && node lib/app.js",
+    "start": "npm run build && cross-env NODE_ENV=production node lib/app.js",
     "test:coverage": "jest --coverage --colors",
     "test:watch": "jest --watch",
     "test": "jest"
