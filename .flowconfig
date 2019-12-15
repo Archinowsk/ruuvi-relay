@@ -1,0 +1,26 @@
+[ignore]
+<PROJECT_ROOT>/node_modules/flow-coverage-report
+<PROJECT_ROOT>/lib
+<PROJECT_ROOT>/.git
+
+[include]
+
+[libs]
+
+[lints]
+all=error
+untyped-import=off
+unclear-type=off
+
+[options]
+# Root import
+module.name_mapper='^\(.*\)$' -> '<PROJECT_ROOT>/src/\1'
+
+# Report warnings
+include_warnings=true
+
+[strict]
+
+[untyped]
+
+[declarations]
